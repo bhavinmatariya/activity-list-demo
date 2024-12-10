@@ -1,0 +1,36 @@
+@import "../../../assets/styles/variables";
+
+.activity-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  .activities {
+    height: 36px;
+    width: 36px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $white-color;
+    color: $green-shade;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $pale-gray;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $green-shade;
+      color: $white-color;
+    }
+
+    &.selected {
+      background-color: $green-shade;
+      color: $white-color;
+      border-color: $green-shade;
+    }
+  }
+}

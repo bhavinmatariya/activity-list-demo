@@ -1,0 +1,76 @@
+@import "../../assets/styles/variables";
+
+:host {
+  width: 100%;
+}
+
+.activity-item-wrapper {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+}
+
+.activity-item {
+  flex: 1;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background-color: $off-white;
+  border: 1px solid $pale-gray;
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activity-type {
+  font-weight: 600;
+  color: $green-shade;
+  margin: 0;
+
+  .text-normal {
+    color: $dark-gray;
+    font-weight: 400;
+  }
+}
+
+.activity-timestamp {
+  font-size: 0.9rem;
+  color: $medium-gray;
+  margin: 2px 0 8px 0;
+}
+
+.activity-note {
+  font-size: 1rem;
+  color: $dark-gray;
+  margin: 0;
+  text-wrap: wrap;
+  word-break: break-all;
+}
+
+.delete-button {
+  background-color: $red-shade;
+  border: none;
+  color: $white-color;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: $red-shade-2;
+}
+
+.activity-item:hover .delete-button {
+  opacity: 1;
+}

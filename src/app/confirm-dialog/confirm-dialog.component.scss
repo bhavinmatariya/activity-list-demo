@@ -1,0 +1,15 @@
+@import "../../assets/styles/variables";
+
+.dialog-title {
+  color: $dark-gray;
+}
+
+::ng-deep {
+  .delete-button.mdc-button.mdc-button--unelevated.mat-mdc-unelevated-button.mat-unthemed.mat-mdc-button-base {
+    background-color: $red-shade;
+  }
+
+  .mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base {
+    color: $dark-gray;
+  }
+}

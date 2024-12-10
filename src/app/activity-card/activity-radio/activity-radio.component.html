@@ -1,0 +1,7 @@
+<div class="activity-wrapper">
+  @for (activity of activities; track $index) {
+  <div class="activities" [class.selected]="selectedRadio?.name === activity.name" (click)="onRadioChange(activity)" [matTooltip]="activity.name">
+    <mat-icon> {{activity.icon }} </mat-icon>
+  </div>
+  }
+</div>

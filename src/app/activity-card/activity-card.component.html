@@ -1,0 +1,12 @@
+<div class="activity-container">
+  <div>
+    <app-activity-input></app-activity-input>
+    <div class="bottom-row">
+      <app-activity-radio></app-activity-radio>
+      <button class="submit-button"
+        [disabled]="!(activityInput?.ActivityForm?.value?.note && activityRadio?.selectedRadio)" (click)="onSubmit()">
+        Submit
+      </button>
+    </div>
+  </div>
+</div>

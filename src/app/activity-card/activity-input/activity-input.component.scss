@@ -1,0 +1,18 @@
+@import "../../../assets/styles/variables";
+
+.form-container {
+  .form-control {
+    width: 97.5%;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 1px solid $light-gray-tint;
+    margin-bottom: 16px;
+    resize: vertical;
+
+    &:focus-visible {
+      outline: none;
+      border-color: $green-shade;
+    }
+  }
+}

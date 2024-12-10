@@ -1,0 +1,82 @@
+@import "../assets/styles/variables";
+
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  h2 {
+    padding: 16px 0;
+    color: $dark-gray;
+    border-bottom: 1px solid $light-gray-tint;
+  }
+
+  .main-content-wrpper {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+    padding: 24px 0;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 14px;
+      left: 69px;
+      height: 96%;
+      width: 3px;
+      background-color: $green-shade;
+    }
+
+    .timeline-line {
+      position: relative;
+      margin-right: 1rem;
+      width: 100%;
+    }
+
+    .timeline-marker {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $white-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $green-shade;
+      font-size: 1.2rem;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 3;
+      color: $green-shade;
+    }
+
+    .activity-card {
+      display: flex;
+      align-items: start;
+      gap: 16px;
+      width: 100%;
+
+      .time-line-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        p {
+          width: 40px;
+          color: $medium-gray;
+        }
+      }
+    }
+
+    .add-acivity-wrapper {
+      display: flex;
+      align-items: start;
+      gap: 16px;
+      margin-left: 50px;
+    }
+  }
+}
+.w-100 {
+  width: 100%;
+}
