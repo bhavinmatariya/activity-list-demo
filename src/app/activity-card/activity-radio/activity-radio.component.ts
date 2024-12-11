@@ -12,11 +12,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 export class ActivityRadioComponent {
   selectedRadio: { name: string; icon: string } | null = null;
   activities = [
-    { name: 'note', icon: 'question_answer' },
-    { name: 'call', icon: 'phone' },
-    { name: 'coffee', icon: 'local_cafe' },
-    { name: 'beer', icon: 'local_bar' },
-    { name: 'meeting', icon: 'person' },
+    { name: 'Note', icon: 'question_answer' },
+    { name: 'Call', icon: 'phone' },
+    { name: 'Coffee', icon: 'local_cafe' },
+    { name: 'Beer', icon: 'local_bar' },
+    { name: 'Meeting', icon: 'person' },
   ];
 
   onRadioChange(activity: { name: string; icon: string }) {
